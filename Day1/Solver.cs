@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Common;
 
 namespace Day1
 {
@@ -10,7 +6,15 @@ namespace Day1
     {
         public int Solve(IEnumerable<string> input) 
         {
-            return 142;
+            var values = new List<int>();
+            foreach (var line in input) 
+            {
+                var firstDigit = GetDigits.GetFirstDigit(line);
+                var lastDigit = GetDigits.GetLastDigit(line);
+
+                values.Add(GetDigits.GetCombinedDigits(firstDigit, lastDigit));
+            }
+            return values.Sum();
         }
     }
 }
