@@ -26,6 +26,6 @@ namespace Common
             return result;
         }
 
-        private static string BasePath { get; set; } = @"C:\Users\peter\source\repos\AdventOfCode2023\";
+        public static string BasePath { get; set; } = @"C:\Users\peter\source\repos\AdventOfCode2023\Inputs\";
     }
 }

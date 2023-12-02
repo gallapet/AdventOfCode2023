@@ -16,6 +16,9 @@ namespace CommonTests.FileReaderTests
 
         public void Read_ValidFile_ArrayReturned()
         {
+            // Arrange
+            FileReader.BasePath = @"C:\Users\peter\source\repos\AdventOfCode2023\TestData\";
+
             // Act
             var result = FileReader.Read("TestInput.txt").ToList();
 
