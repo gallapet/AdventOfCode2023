@@ -17,4 +17,9 @@
     <PackageReference Include="Shouldly" Version="4.2.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Common\Common.csproj" />
+    <ProjectReference Include="..\Day2\Day2.csproj" />
+  </ItemGroup>
+
 </Project>

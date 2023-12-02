@@ -13,6 +13,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inputs", "Inputs", "{BDDB15
 	ProjectSection(SolutionItems) = preProject
 		day1Input.txt = day1Input.txt
 		day1Sample.txt = day1Sample.txt
+		Inputs\day2Input.txt = Inputs\day2Input.txt
+		Inputs\day2Sample.txt = Inputs\day2Sample.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{A979BA14-185F-4210-8DFC-0CBF236BBD01}"
