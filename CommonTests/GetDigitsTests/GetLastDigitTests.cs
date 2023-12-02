@@ -17,6 +17,7 @@ namespace CommonTests.GetDigitsTests
         [DataRow("2ab", 2)]
         [DataRow("ab3", 3)]
         [DataRow("a1b23", 3)]
+        [DataRow("a1b23four", 4)]
         public void GetLastDigit_ValidString_IntReturned(string input, int expected)
         {
             // Act

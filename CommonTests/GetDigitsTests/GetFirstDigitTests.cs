@@ -17,6 +17,7 @@ namespace CommonTests.GetDigitsTests
         [DataRow("2ab", 2)]
         [DataRow("ab3", 3)]
         [DataRow("a1b23", 1)]
+        [DataRow("one23", 1)]
         public void GetFirstDigit_ValidString_IntReturned(string input, int expected)
         {
             // Act

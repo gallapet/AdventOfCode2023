@@ -16,14 +16,22 @@ namespace Day1Tests.SolverTests
         public void Solve_Valid_Okay()
         {
             // Arrange 
-            var input = new List<string> { "1abc2", "npqr3stu8vwx", "na1b2c3d4e5f", "ntreb7uchet" };
+            // ---- Part 1 ----
+            //var input = new List<string> { "1abc2", "npqr3stu8vwx", "na1b2c3d4e5f", "ntreb7uchet" };
+
+            // ---- Part 2 ----
+            var input = new List<string> { "two1nine", "eightwothree", "abcone2threexyz", "xtwone3four", "4nineeightseven2", "zoneight234", "7pqrstsixteen" };
             var target = new Solver();
             
             // Act
             var result = target.Solve(input);
 
             // Assert
-            result.ShouldBe(142);
+            // ---- Part 1 ----
+            //result.ShouldBe(142);
+
+            // ---- Part 2 ----
+            result.ShouldBe(281);
         }
     }
 }
