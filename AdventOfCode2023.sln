@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1", "Day1\Day1.csproj", "{77679282-9D12-4514-835E-6BD0FC09B12C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1", "Day1\Day1.csproj", "{77679282-9D12-4514-835E-6BD0FC09B12C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Common\Common.csproj", "{88C1CD7F-8ACF-4718-9944-7B27164623E9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Common", "Common\Common.csproj", "{88C1CD7F-8ACF-4718-9944-7B27164623E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day1Tests", "Day1Tests\Day1Tests.csproj", "{4037C8B3-30ED-4313-8BB9-6365958E7577}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day1Tests", "Day1Tests\Day1Tests.csproj", "{4037C8B3-30ED-4313-8BB9-6365958E7577}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inputs", "Inputs", "{BDDB15A7-E0B6-4542-887B-44F80187A6C2}"
 	ProjectSection(SolutionItems) = preProject
@@ -15,6 +15,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inputs", "Inputs", "{BDDB15
 		day1Sample.txt = day1Sample.txt
 		Inputs\day2Input.txt = Inputs\day2Input.txt
 		Inputs\day2Sample.txt = Inputs\day2Sample.txt
+		day3Input.txt = day3Input.txt
+		day3Sample.txt = day3Sample.txt
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{A979BA14-185F-4210-8DFC-0CBF236BBD01}"
@@ -22,11 +24,15 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestData", "TestData", "{A9
 		TestInput.txt = TestInput.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonTests", "CommonTests\CommonTests.csproj", "{58396280-98E8-484B-BDF8-BAF85EA3F729}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CommonTests", "CommonTests\CommonTests.csproj", "{58396280-98E8-484B-BDF8-BAF85EA3F729}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2", "Day2\Day2.csproj", "{5B64B1CF-64C0-4AAD-909B-FA4026FF9151}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day2", "Day2\Day2.csproj", "{5B64B1CF-64C0-4AAD-909B-FA4026FF9151}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day2Tests", "Day2Tests\Day2Tests.csproj", "{2ABB0F94-6F62-4799-8382-BCF04EBC8738}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Day2Tests", "Day2Tests\Day2Tests.csproj", "{2ABB0F94-6F62-4799-8382-BCF04EBC8738}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3", "Day3\Day3.csproj", "{9C42C6C5-81C2-4A1D-9769-14727B361723}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Day3Tests", "Day3Tests\Day3Tests.csproj", "{0D78DED6-578F-455D-8F97-C913A7A99693}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +64,14 @@ Global
 		{2ABB0F94-6F62-4799-8382-BCF04EBC8738}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ABB0F94-6F62-4799-8382-BCF04EBC8738}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ABB0F94-6F62-4799-8382-BCF04EBC8738}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C42C6C5-81C2-4A1D-9769-14727B361723}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C42C6C5-81C2-4A1D-9769-14727B361723}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C42C6C5-81C2-4A1D-9769-14727B361723}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C42C6C5-81C2-4A1D-9769-14727B361723}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D78DED6-578F-455D-8F97-C913A7A99693}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D78DED6-578F-455D-8F97-C913A7A99693}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D78DED6-578F-455D-8F97-C913A7A99693}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D78DED6-578F-455D-8F97-C913A7A99693}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
