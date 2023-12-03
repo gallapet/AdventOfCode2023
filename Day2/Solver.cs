@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Common;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,12 +12,17 @@ namespace Day2
         int maxNumberRed = 12;
         int maxNumberGreen = 13;
         int maxNumberBlue = 14;
+
+        IDictionary<string, int> totalDice = new Dictionary<string, int>()
+        {
+            { "red", 0 }, { "green", 0 }, { "blue", 0 } 
+        };
         public int Solve(IEnumerable<string> input)
         {
             var result = 0;
             foreach (string line in input)
             {
-                bool impossibleGame = false;
+                //bool impossibleGame = false;
 
                 var split = line.Split(":");
                 int gameNumber = int.Parse(split[0].Substring(4));
@@ -27,19 +33,18 @@ namespace Day2
                     {
                         if (int.TryParse(elems[i].ToString(), out int numberOfDice))
                         {
-                            if (IsImpossibleGame(elems[i + 1], numberOfDice))
+                            var colour = elems[i + 1].Replace(",", "");
+                            if (numberOfDice > totalDice[colour])
                             {
-                                impossibleGame = true;
-                                break;
+                                totalDice[colour] = numberOfDice;
                             }
                         }
                     }
                 }
+                result += totalDice.MultiplyValues();
+                
+                totalDice.ZeroValues();
 
-                if (!impossibleGame)
-                {
-                    result += gameNumber;
-                }
             }
             return result;
         }

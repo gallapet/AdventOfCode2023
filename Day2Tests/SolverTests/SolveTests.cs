@@ -25,7 +25,7 @@ namespace Day2Tests.SolverTests
             var result = solver.Solve(input);
 
             // Assert
-            result.ShouldBe(8);
+            result.ShouldBe(2286);
         }
     }
 }
