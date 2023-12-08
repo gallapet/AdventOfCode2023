@@ -4,7 +4,12 @@
     {
         public int Solve(IEnumerable<string> input)
         {
-            return 0;
+            var result = 0;
+            foreach (string line in input) 
+            {
+                
+            }
+            return result;
         }
     }
 }
